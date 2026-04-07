@@ -10,7 +10,7 @@ const IMG = {
   samsa_almond:    'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiO3CutZsa3-pToJeIDQBwfMl_DiGVxd6RkTZId_Z3eqa45D9QS2FPjbsUEhQC-UuhbyZmdPlgWkzJwOKr57IIolVj-3Whkg8RhrwcDX2hACBryIaJjNUvqSBnNFO3PK4wrGfWzVaX27Hmj_IxhVyJLumH3bC8ZeVYiUztvhBA7fYLGsqH17G-bnEkM/s16000-rw/Almond-samsa.webp',
   mahnosha:        'https://i.imgur.com/44ifd4x.jpeg',
   halou_almond:    'https://i.pinimg.com/736x/2b/04/40/2b0440518b5bae472c2639799614d188.jpg',
-  halou_pistachio: 'https://scontent-dus1-1.xx.fbcdn.net/v/t1.6435-9/104121661_2447610925530462_3019340524490286686_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=7b2446&_nc_ohc=X053ZxwaM-AQ7kNvwE3tOvg&_nc_oc=AdkceLnzIGqYVpDRPYIka171POxUkEaDBUDoC5UjRGT9hWsZD2DIfebd_qHKvB-VbqM&_nc_zt=23&_nc_ht=scontent-dus1-1.xx&_nc_gid=2nqbtmL3zOF45WNw0nvvvQ&_nc_ss=8&oh=00_Afw-kP-gNJLwq9FHFT-aqI87zlNgL4xEuYvKYVRF_0DxZQ&oe=69E16E92',
+  halou_pistachio: 'https://i.imgur.com/nLikDPQ.jpeg',
   kak_anbar:       'https://i.imgur.com/IXfnVQZ.jpeg',
   kaaber:          'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlUKZTk0Zp4tRU6dVpUFutwgWPJ7qqRLvyUQ&s',
   zouza_caramel:   'https://vanoiserie.tn/wp-content/uploads/2023/03/zouza-1.jpg',
@@ -24,7 +24,7 @@ const IMG = {
   dattefarcie :    'https://i.imgur.com/hwBJSgm.jpeg',
   ochbolbol :      'https://i.imgur.com/ajII8aS.jpeg',
   machmoum :       'https://i.imgur.com/ezjfkfj.jpeg',
- 
+ coffertclassique: 'https://i.imgur.com/sLbxcaL.jpeg',
   
 };
 
@@ -56,23 +56,22 @@ const cakesData = [
   {name:'Anniversaire',desc:'Rose et or, lettrages dorés',price:'Sur devis',img:IMG.birthday,cat:'Anniversaire'},
 ];
 const coffertsData = [
- {name:'coffert Anniversaire',desc:'Thème Anniversaire',price:'piece 8 D',img:"https://i.imgur.com/GisLhR0.jpeg"},
-  {name:'coffert Anniversaire',desc:'Thème Anniversaire',price:'piece 8 D',img:"https://i.imgur.com/GisLhR0.jpeg"},
-  {name:'coffert Anniversaire',desc:'Thème Anniversaire',price:'piece 8 D',img:"https://i.imgur.com/GisLhR0.jpeg"},
+ {name:'coffert classique',desc:'Thème clasiique',price:'45',img:"https://i.imgur.com/sLbxcaL.jpeg"},
+  
 ];
 
 const zrirData = [
   { 
     name: "Zrir Traditionnel", 
     desc: "Mélange onctueux de sésame grillé, noisettes et miel pur.", 
-    price: "50 DT / kg", 
+    price: "50 ", 
     img: "https://i.imgur.com/mFAs1d6.jpeg" // Remplacez par vos vraies images
   },
  
   { 
     name: "Pot Zrir Décoré (Petit)", 
     desc: "Format cadeau idéal pour les cérémonies de naissance.", 
-    price: "70 DT / kg", 
+    price: "70 ", 
     img: "https://i.imgur.com/WhFGZfh.jpeg"
   }
 ];
@@ -140,7 +139,7 @@ history.replaceState({page:'home'},'','#home');
 const allProducts=['baklewa amonde','baklewa noisette','baklewa fruit sec','ghrayba simple','ghrayba druit sec','ghrayba blanc','ghrayba sorgho','och bolbol','machmoum','samsa fruit sec'
 ,'samsa amonde','briwette noisette et amond','datte farcie','hlow amonde','hlow noisette','kak anbar','les balons de carthage','zouza caramel','zouza caramel et noisette',
 'Gâteau de Mariage',"Gâteau d'Anniversaire",'Gâteau Fiançailles',
-,'Mini Sandwichs','Plateau Mixte 30 pcs','Pot Zrir Décoré (Petit)','Zrir Traditionnel','Plateau Réception 60 pcs','Autre (préciser dans les détails)'];
+,'Mini Sandwichs','Plateau Mixte 30 pcs','Pot Zrir Décoré (Petit)','coffert classique','Zrir Traditionnel','Plateau Réception 60 pcs','Autre (préciser dans les détails)'];
 let itemCount=0;
 function buildSelectOptions(v){return allProducts.map(p=>`<option value="${p}"${p===v?' selected':''}>${p}</option>`).join('');}
 function addItem(productName){
